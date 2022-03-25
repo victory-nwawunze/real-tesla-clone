@@ -9,11 +9,13 @@ function Section() {
         <h1>Model S</h1>
         <p>Order Online For Touches Delivery</p>
       </ItemText>
-
-      <ButtonGroup>
-        <LeftButton>Custom Order</LeftButton>
-        <RightButton>Exisiting Inventory</RightButton>
-      </ButtonGroup>
+      <Buttons>
+        <ButtonGroup>
+          <LeftButton>Custom Order</LeftButton>
+          <RightButton>Exisiting Inventory</RightButton>
+        </ButtonGroup>
+        <DownArrow src="/images/down-arrow.svg" />
+      </Buttons>
     </Wrap>
   );
 }
@@ -56,6 +58,14 @@ const LeftButton = styled.div`
   text-transform: uppercase;
   font-size: 12px;
   cursor: pointer;
+  margin: 8px;
 `;
 
 const RightButton = styled(LeftButton)``;
+
+const DownArrow = styled.img`
+  margin-top: 20px;
+  height: 40px;
+`;
+
+const Buttons = styled.div``;
