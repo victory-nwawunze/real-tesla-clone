@@ -35,6 +35,7 @@ const Container = styled.div`
   top: 0;
   right: 0;
   left: 0;
+  justify-content: space-between;
 `;
 
 const Menu = styled.div`
@@ -48,6 +49,9 @@ const Menu = styled.div`
     padding: 0 10px;
     flex-wrap: nowrap;
   }
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const RightMenu = styled.div`
@@ -60,4 +64,6 @@ const RightMenu = styled.div`
   }
 `;
 
-const CustomMenu = styled(MenuIcon)``;
+const CustomMenu = styled(MenuIcon)`
+  cursor: pointer;
+`;
