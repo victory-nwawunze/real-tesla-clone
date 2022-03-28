@@ -50,7 +50,7 @@ function Home() {
       />
       <Section
         title="Accessories"
-        description=""
+        // description=""
         backgroundImg="accessories.jpg"
         leftBtnText="Shop now"
       />
